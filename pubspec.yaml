@@ -25,16 +25,16 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/
+    - assets/images/
 
   fonts:
     - family: Voces
       fonts:
-        - asset: fonts/Montserrat-VariableFont_wght.ttf
-        - asset: fonts/Montserrat-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/Montserrat-Italic-VariableFont_wght.ttf
           style: italic
     - family: Voces
       fonts:
-        - asset: fonts/Voces-Regular.ttf
-        - asset: fonts/TrajanPro_Bold.ttf
+        - asset: assets/fonts/Voces-Regular.ttf
+        # - asset: fonts/TrajanPro_Bold.ttf
           weight: 700
