@@ -10,7 +10,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Voces'),
     );
@@ -27,7 +27,27 @@ class MyHomePage extends StatelessWidget {
       body: SafeArea(
           child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(),
+        child: Container(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Image.asset(
+                scale: 1,
+                'assets/images/desktop.jpg',
+                height: 640.0,
+                width: 1440.0,
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              const Text(
+                "PERFUME",
+                style: TextStyle(fontWeight: FontWeight.w500),
+              )
+            ],
+          ),
+        ),
       )),
     );
   }
